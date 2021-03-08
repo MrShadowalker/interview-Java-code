@@ -34,6 +34,12 @@ import java.util.concurrent.BlockingQueue;
  * | 移除    | remove(e) | poll()   | take() | poll(time, unit)     |
  * | 检查    | element() | peek()   | 不可用  | 不可用                |
  *
+ * 3 应用
+ * 3.1 生产者/消费者模式
+ * 3.1.1 传统模式 ProdConsumer_TraditionDemo
+ * 3.2 线程池
+ * 3.3 消息中间件
+ *
  * @author Shadowalker
  */
 public class BlockingQueueDemo {
