@@ -6,6 +6,9 @@ package thread;
  * @author Shadowalker
  */
 public class ProdConsumer_BlockQueueDemo {
+    public static void main(String[] args) {
+    }
+
 }
 
 class MyResource {
