@@ -1,0 +1,9 @@
+
+]	java:S1257"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8€¾‚‚/
+X	java:S125"<This block of commented-out lines of code should be removed.(£ï—¸8ŠÕßÿ€/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(’“ñ­8÷Œ»ÿ€/
+c
+java:S2142/"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8÷Œ»ÿ€/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Â ²8÷Œ»ÿ€/
+c
+java:S2142'"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8÷Œ»ÿ€/
