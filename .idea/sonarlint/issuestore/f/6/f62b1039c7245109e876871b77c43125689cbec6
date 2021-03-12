@@ -1,0 +1,18 @@
+
+I
+java:S30119",This accessibility update should be removed.(ˆ¢°ø8ÅŒŠ/
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(öŠèî8ı»¢Š/
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(Ìø²Î8Úîí‰/
+a
+java:S2147C"DCombine this catch with the one at line 61, which has the same body.(åşáÿ8ƒÒŠ/
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(á€ÔÌøÿÿÿÿ8½èø‰/
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(á€ÔÌøÿÿÿÿ8à÷‰/
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(‡Éß8İô‰/
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(¸¿ñŞ8ªÙˆŠ/
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(¿Øù±ıÿÿÿÿ8÷­Š/
+a
+java:S2147?"DCombine this catch with the one at line 61, which has the same body.(Å¡ß8ƒÒŠ/
+P
+java:S2440"3Remove this instantiation of "InnerClassSingleton".(ÔËÅ 8‚‹ç‰/
+a
+java:S2147A"DCombine this catch with the one at line 61, which has the same body.(¯áè8ƒÒŠ/

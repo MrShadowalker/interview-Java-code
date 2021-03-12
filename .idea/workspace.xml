@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfd0753-959d-42db-8651-1acb5d9ff8a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lock/DeadLockDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/gc/GcRootDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm/gc/GcRootDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
@@ -118,17 +119,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DeadLockDemo" />
@@ -157,7 +147,10 @@
       <workItem from="1615099498497" duration="655000" />
       <workItem from="1615106436539" duration="13389000" />
       <workItem from="1615190644274" duration="33000" />
-      <workItem from="1615190712317" duration="12054000" />
+      <workItem from="1615190712317" duration="12343000" />
+      <workItem from="1615517994110" duration="858000" />
+      <workItem from="1615520240545" duration="341000" />
+      <workItem from="1615520594277" duration="1238000" />
     </task>
     <task id="LOCAL-00001" summary="阻塞队列。&#10;synchronized 和 ReentrantLock 的区别。">
       <created>1615192841290</created>
@@ -173,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615282341158</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="死锁">
+      <created>1615516300597</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615516300597</updated>
+    </task>
+    <task id="LOCAL-00004" summary="死锁">
+      <created>1615520437796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615520437796</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +191,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="阻塞队列。&#10;synchronized 和 ReentrantLock 的区别。" />
     <MESSAGE value="设计模式——单例模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计模式——单例模式" />
+    <MESSAGE value="死锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="死锁" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
