@@ -17,7 +17,7 @@ public class GcRootDemo {
 
     public static void m1() {
         GcRootDemo t1 = new GcRootDemo();
-        System.gc();;
+        System.gc();
         System.out.println("第一次 GC 完成！");
     }
 
