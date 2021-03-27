@@ -19,7 +19,12 @@ public class ShellSortDemo {
     }
 
     public static void sort(int[] arr) {
-        // 间隔序列暂且设置 gap = arr.length/2，但其实还有更好的。
+        /**
+         * 间隔序列暂且设置 gap = arr.length/2，但其实还有更好的。
+         * Knuth 序列
+         * h = 1
+         * h = 3h + 1
+         */
         for (int gap = arr.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < arr.length; i++) {
                 for (int j = i; j > gap - 1; j -= gap) {
