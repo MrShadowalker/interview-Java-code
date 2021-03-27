@@ -12,7 +12,9 @@ package designpattern.singleton;
  */
 class LazySingleton {
 
-    // 线程安全问题通过 synchronized 解决
+    /**
+     * 线程安全问题通过 synchronized 解决
+     */
     private static volatile LazySingleton instance;
 
     private LazySingleton() {
@@ -36,6 +38,9 @@ class LazySingleton {
     }
 }
 
+/**
+ * @author Shadowalker
+ */
 public class LazySingletonDemo {
 
     public static void main(String[] args) {

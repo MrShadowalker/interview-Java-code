@@ -7,6 +7,8 @@ import java.util.Random;
  * 优化的插入排序
  * eg：设置间隔为 4，依次插入排序；再设置间隔为 2，依次插入排序；再设置间隔为 1，插入排序。
  * 优化点：间隔大的时候，交换次数少；间隔小的时候，交换距离短。
+ *
+ * @author Shadowalker
  */
 public class ShellSortDemo {
 
@@ -27,8 +29,6 @@ public class ShellSortDemo {
                 }
             }
         }
-
-
     }
 
 

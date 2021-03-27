@@ -5,6 +5,8 @@ package algorithm.sort;
  * 时间复杂度：O(n²)
  * 基本不用，太慢
  * 最好情况时间复杂度 O(n) 需要优化
+ *
+ * @author Shadowalker
  */
 public class BubbleSortDemo {
     public static void main(String[] args) {
@@ -26,7 +28,7 @@ public class BubbleSortDemo {
 
     // 马士兵冒泡
     static void sort2(int[] arr) {
-        for (int i = arr.length - 1; i > 0 ; i--) {
+        for (int i = arr.length - 1; i > 0; i--) {
             findMax(arr, i);
         }
     }

@@ -9,7 +9,9 @@ import java.util.concurrent.atomic.AtomicReference;
  * @author Shadowalker
  */
 public class SpinLockDemo {
-    // 原子引用线程
+    /**
+     * 原子引用线程
+     */
     AtomicReference<Thread> atomicReference = new AtomicReference<>();
 
     public void myLock() {

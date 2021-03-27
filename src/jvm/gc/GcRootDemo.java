@@ -6,6 +6,8 @@ package jvm.gc;
  * 2. 方法区中的类静态属性引用的对象
  * 3. 方法区中常量引用的对象
  * 4. 本地方法栈中 JNI 中引用的对象
+ *
+ * @author Shadowalker
  */
 public class GcRootDemo {
 

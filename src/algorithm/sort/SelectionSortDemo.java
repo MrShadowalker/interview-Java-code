@@ -7,6 +7,8 @@ package algorithm.sort;
  * 选中未排序的第一个数，向后比较选择最小的数，交换位置。向后遍历。
  * 优化 1：在找出最小数放在队首，同时找出最大数放在队尾，减少一半的遍历
  * 优化 2：……
+ *
+ * @author Shadowalker
  */
 public class SelectionSortDemo {
 

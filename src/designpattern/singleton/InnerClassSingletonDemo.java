@@ -9,7 +9,6 @@ import java.util.concurrent.TimeUnit;
  * 1. 本质上是利用类的加载机制来保证线程安全
  * 2. 只有在实际使用的时候，才会触发类的初始化，所以也是懒加载的一种形式。
  *
- *
  * @author Shadowalker
  */
 class InnerClassSingleton {
@@ -17,6 +16,7 @@ class InnerClassSingleton {
     private static class InnerClassHolder {
         private static InnerClassSingleton instance = new InnerClassSingleton();
     }
+
     private InnerClassSingleton() {
         // 防止通过反射的方式多实例化
         if (InnerClassHolder.instance != null) {
@@ -30,6 +30,9 @@ class InnerClassSingleton {
 
 }
 
+/**
+ * @author Shadowalker
+ */
 public class InnerClassSingletonDemo {
     public static void main(String[] args) {
         InnerClassSingleton instance1 = InnerClassSingleton.getInstance();

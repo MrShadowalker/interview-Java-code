@@ -7,6 +7,8 @@ import java.util.Random;
  * 对基本有序的数组更快，样本小且基本有序的时候效率比较高，O(n)
  * 从第二个位置开始，与前面的值比较，如果小于前值，则插入到前面。
  * 优化：用临时变量记录标记项，去掉 swap 方法
+ *
+ * @author Shadowalker
  */
 public class InsertionSortDemo {
 
@@ -20,7 +22,7 @@ public class InsertionSortDemo {
         for (int i = 1; i < arr.length; i++) {
 
             // for (int j = i; j > 0; j--) {
-                // if (arr[j] < arr[j - 1]) {
+            // if (arr[j] < arr[j - 1]) {
             for (int j = i; j > 0 && arr[j] < arr[j - 1]; j--) {
                 swap(arr, j, j - 1);
                 // }

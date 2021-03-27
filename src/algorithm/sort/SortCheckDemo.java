@@ -9,6 +9,8 @@ import java.util.Random;
  * 2. 用确定正确的算法计算样本结果
  * 3. 对比被验证的算法的结果
  * 4. 循环多次，确保正确
+ *
+ * @author Shadowalker
  */
 public class SortCheckDemo {
 

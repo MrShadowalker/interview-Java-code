@@ -2,6 +2,11 @@ package lock.jvm;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 死锁
+ *
+ * @author Shadowalker
+ */
 public class DeadLockDemo {
     public static void main(String[] args) {
         String lockA = "lockA";
