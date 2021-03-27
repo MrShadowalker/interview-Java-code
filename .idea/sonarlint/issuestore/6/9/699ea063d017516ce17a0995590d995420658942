@@ -1,0 +1,13 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(ØşëŸüÿÿÿÿ8Ëøî‘‡/
+U	java:S106:"9Replace this use of System.out or System.err by a logger.(º¼É°8Ëøî‘‡/
+L
+java:S11448"*Remove this unused private "print" method.(Ş•îşıÿÿÿÿ8Ëøî‘‡/
+J
+java:S1125'"(Remove the literal "true" boolean value.(½ÁØ¥üÿÿÿÿ8Ëøî‘‡/
+E
+java:S1125)"(Remove the literal "true" boolean value.(»”˜ò8Ëøî‘‡/
+X	java:S125"<This block of commented-out lines of code should be removed.(¡ôíÉ8Ëøî‘‡/
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(»”˜ò8Ëøî‘‡/
+:
+java:S2119/"Save and re-use this "Random".(¼İÅf8Ëøî‘‡/

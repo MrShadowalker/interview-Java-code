@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfd0753-959d-42db-8651-1acb5d9ff8a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/jvm/gc/GcRootDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm/gc/GcRootDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithm/sort/ShellSortDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/CountWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview-Java-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/interview-Java-code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/jvm/gc/GcRootDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interview-Java-code/jvm/gc/GcRootDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/DeadLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/HoldLockThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/MyCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/ReadWriteLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/ShareResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/SpinLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/SyncAndReentrantLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/thread/SynchronousQueueDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interview-Java-code/thread/SynchronousQueueDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/BubbleSortDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/BubbleSortDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/InsertionSortDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/InsertionSortDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/SelectionSortDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/SelectionSortDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/SortCheckDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/SortCheckDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +54,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -45,21 +62,34 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.42954546" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.DeadLockDemo">
-    <configuration name="DeadLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lock.DeadLockDemo" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resource" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SortCheckDemo">
+    <configuration name="BlockingQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.BlockingQueueDemo" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lock.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HungrySingletonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designpattern.singleton.HungrySingletonDemo" />
+    <configuration name="CountWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.CountWord" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="designpattern.singleton.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InnerClassSingletonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designpattern.singleton.InnerClassSingletonDemo" />
+    <configuration name="ShellSortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.sort.ShellSortDemo" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="designpattern.singleton.*" />
+          <option name="PATTERN" value="algorithm.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LazySingletonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designpattern.singleton.LazySingletonDemo" />
+    <configuration name="SortCheckDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.sort.SortCheckDemo" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="designpattern.singleton.*" />
+          <option name="PATTERN" value="algorithm.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,26 +136,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SyncAndReentrantLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lock.SyncAndReentrantLockDemo" />
+    <configuration name="SynchronousQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.SynchronousQueueDemo" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lock.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DeadLockDemo" />
-        <item itemvalue="Application.InnerClassSingletonDemo" />
-        <item itemvalue="Application.HungrySingletonDemo" />
-        <item itemvalue="Application.LazySingletonDemo" />
-        <item itemvalue="Application.SyncAndReentrantLockDemo" />
+        <item itemvalue="Application.SortCheckDemo" />
+        <item itemvalue="Application.ShellSortDemo" />
+        <item itemvalue="Application.CountWord" />
+        <item itemvalue="Application.SynchronousQueueDemo" />
+        <item itemvalue="Application.BlockingQueueDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +194,22 @@
       <workItem from="1615517994110" duration="858000" />
       <workItem from="1615520240545" duration="341000" />
       <workItem from="1615520594277" duration="1238000" />
+      <workItem from="1615604068116" duration="1319000" />
+      <workItem from="1615628053830" duration="2905000" />
+      <workItem from="1615718377823" duration="3947000" />
+      <workItem from="1615723933180" duration="646000" />
+      <workItem from="1615767973482" duration="573000" />
+      <workItem from="1615881472629" duration="3309000" />
+      <workItem from="1616577053830" duration="1963000" />
+      <workItem from="1616674330686" duration="4768000" />
+      <workItem from="1616679912043" duration="1910000" />
+      <workItem from="1616681891371" duration="3177000" />
+      <workItem from="1616685353067" duration="570000" />
+      <workItem from="1616686243480" duration="120000" />
+      <workItem from="1616686414821" duration="1625000" />
+      <workItem from="1616718521964" duration="286000" />
+      <workItem from="1616718963249" duration="966000" />
+      <workItem from="1616719989392" duration="13190000" />
     </task>
     <task id="LOCAL-00001" summary="阻塞队列。&#10;synchronized 和 ReentrantLock 的区别。">
       <created>1615192841290</created>
@@ -180,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615520437796</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增排序算法">
+      <created>1616718809693</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616718809693</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,10 +255,12 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="阻塞队列。&#10;synchronized 和 ReentrantLock 的区别。" />
     <MESSAGE value="设计模式——单例模式" />
     <MESSAGE value="死锁" />
-    <option name="LAST_COMMIT_MESSAGE" value="死锁" />
+    <MESSAGE value="新增排序算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增排序算法" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

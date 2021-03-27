@@ -1,3 +1,12 @@
 
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(Š˜÷Úÿÿÿÿÿ
+X
+java:S1854"6Remove this useless assignment to local variable "t1".(Ó¤õûùÿÿÿÿ8Àœð¦‚/
+q
+java:S1215"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“8Àœð¦‚/
+I
+java:S1481"'Remove this unused "t1" local variable.(Ó¤õûùÿÿÿÿ8Àœð¦‚/
+X	java:S125"<This block of commented-out lines of code should be removed.(ßöžå8Ôýì¦‚/
+J
+java:S1068"-Remove this unused "byteArray" private field.(Ò›Ýë8Ôýì¦‚/
+]	java:S125"<This block of commented-out lines of code should be removed.(Š’ÂÆüÿÿÿÿ8ïêí¦‚/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¤¿‡ë8Àœð¦‚/

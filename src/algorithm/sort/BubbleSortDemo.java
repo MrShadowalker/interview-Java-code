@@ -3,6 +3,7 @@ package algorithm.sort;
 /**
  * 冒泡排序
  * 时间复杂度：O(n²)
+ * 基本不用，太慢
  * 最好情况时间复杂度 O(n) 需要优化
  */
 public class BubbleSortDemo {
