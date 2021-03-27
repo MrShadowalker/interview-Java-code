@@ -19,13 +19,19 @@ public class ShellSortDemo {
     }
 
     public static void sort(int[] arr) {
+
         /**
          * 间隔序列暂且设置 gap = arr.length/2，但其实还有更好的。
          * Knuth 序列
          * h = 1
          * h = 3h + 1
          */
-        for (int gap = arr.length / 2; gap > 0; gap /= 2) {
+        int h = 1;
+        while (h <= arr.length / 3) {
+            h = 3 * h + 1;
+        }
+        // for (int gap = arr.length / 2; gap > 0; gap /= 2) {
+        for (int gap = h; gap > 0; gap = (gap - 1) / 3) {
             for (int i = gap; i < arr.length; i++) {
                 for (int j = i; j > gap - 1; j -= gap) {
                     if (arr[j] < arr[j - gap]) {
@@ -35,7 +41,6 @@ public class ShellSortDemo {
             }
         }
     }
-
 
     private static int[] generateRandomArray() {
         Random random = new Random();
