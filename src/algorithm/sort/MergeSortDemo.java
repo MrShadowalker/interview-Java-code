@@ -14,18 +14,32 @@ import static java.lang.System.out;
 public class MergeSortDemo {
 
     public static void main(String[] args) {
-        // 先把前后两段分别排好序的数组拿出来做 demo
-        int[] arrDemo = {1, 4, 7, 8, 3, 6, 9};
-        sort(arrDemo, 0, );
 
         // 归并排序需要处理的场景要更复杂，递归的时候可以将原数组分割为更细粒度的小数组进行排序
-        // int[] arr = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
+        int[] arr = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
         // sort(arr);
+
+        // 先把前后两段分别排好序的数组拿出来做 demo
+        // int[] arrDemo = {1, 4, 7, 8, 3, 6, 9};
+        sort(arr, 0, arr.length - 1);
+        print(arr);
     }
 
-    public static void sort(int[] arr, int leftPtrtr, int rightPtr, int rightBound) {
-        int mid = (arr.length >> 1) + 1;
-        merge(arr, 0, mid, arr.length - 1);
+    public static void sort(int[] arr, int left, int right) {
+        if (left >= right) {
+            return;
+        }
+
+        // 分成两半
+        int mid = left + (right - left) / 2;
+
+        // 左边排序
+        sort(arr, left, mid);
+
+        // 右边排序
+        sort(arr, mid + 1, right);
+
+        merge(arr, left, mid + 1, right);
         // merge(arr, 1, 3, 5);
     }
 
@@ -38,9 +52,11 @@ public class MergeSortDemo {
      */
     private static void merge(int[] arr, int leftPtr, int rightPtr, int rightBound) {
 
+        int mid = rightPtr - 1;
+
         // 左指针右指针引入后，长度要重新计算
         int length = rightBound - leftPtr + 1;
-        int mid = rightPtr - 1;
+
         int[] temp = new int[length];
 
         int i = leftPtr;
@@ -58,7 +74,9 @@ public class MergeSortDemo {
             temp[k++] = arr[j++];
         }
 
-        print(temp);
+        for (int a = 0; a < temp.length; a++) arr[leftPtr + a] = temp[a];
+
+        // print(temp);
     }
 
     /**
