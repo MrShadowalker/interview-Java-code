@@ -7,6 +7,7 @@ import static java.lang.System.out;
 /**
  * 归并排序
  * 递归调用
+ * 也可以尝试一下迭代
  *
  * @author Shadowalker
  */
@@ -14,16 +15,18 @@ public class MergeSortDemo {
 
     public static void main(String[] args) {
         // 先把前后两段分别排好序的数组拿出来做 demo
-        int[] arrDemo = {1, 3, 4, 5, 2, 6, 7};
-        sort(arrDemo);
+        int[] arrDemo = {1, 4, 7, 8, 3, 6, 9};
+        sort(arrDemo, 0, );
 
         // 归并排序需要处理的场景要更复杂，递归的时候可以将原数组分割为更细粒度的小数组进行排序
-        int[] arr = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
-        sort(arr);
+        // int[] arr = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
+        // sort(arr);
     }
 
-    private static void sort(int[] arr) {
-        mergeDemo(arr);
+    public static void sort(int[] arr, int leftPtrtr, int rightPtr, int rightBound) {
+        int mid = (arr.length >> 1) + 1;
+        merge(arr, 0, mid, arr.length - 1);
+        // merge(arr, 1, 3, 5);
     }
 
     /**
@@ -36,26 +39,22 @@ public class MergeSortDemo {
     private static void merge(int[] arr, int leftPtr, int rightPtr, int rightBound) {
 
         // 左指针右指针引入后，长度要重新计算
-        int mid = (rightPtr - leftPtr) >> 1;
-        int[] temp = new int[arr.length];
+        int length = rightBound - leftPtr + 1;
+        int mid = rightPtr - 1;
+        int[] temp = new int[length];
 
         int i = leftPtr;
-        int j = mid + 1;
+        int j = rightPtr;
         int k = 0;
 
-        while (i <= mid && j < arr.length) {
-            temp[k] = Math.min(arr[i], arr[j]);
-            if (arr[i] <= arr[j]) {
-                temp[k++] = arr[i++];
-            } else {
-                temp[k++] = arr[j++];
-            }
+        while (i <= mid && j <= rightBound) {
+            temp[k++] = arr[i] <= arr[j] ? arr[i++] : arr[j++];
         }
-        // 还需要考虑数组排序便宜，前后如果还有剩余，需要单独再处理
+        // 还需要考虑数组排序偏移，前后如果还有剩余，直接将剩余部分拼接到结果数组中即可
         while (i <= mid) {
             temp[k++] = arr[i++];
         }
-        while (j < arr.length) {
+        while (j <= rightBound) {
             temp[k++] = arr[j++];
         }
 

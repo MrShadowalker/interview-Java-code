@@ -35,6 +35,7 @@ public class SortCheckDemo {
             // InsertionSortDemo.sort(arr1);
             // InsertionSortDemo.sort2(arr1);
             // ShellSortDemo.sort(arr1);
+            MergeSortDemo.sort(arr1);
 
             boolean isSame = false;
             for (int j = 0; j < arr0.length; j++) {
