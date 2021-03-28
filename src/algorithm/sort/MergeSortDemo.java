@@ -6,6 +6,7 @@ import static java.lang.System.out;
 
 /**
  * 归并排序
+ * 时间复杂度 O(N) = NlogN
  * 递归调用
  * 也可以尝试一下迭代
  *
