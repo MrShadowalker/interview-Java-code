@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class QuickSortDemo {
     public static void main(String[] args) {
-        int[] arr = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
+        int[] arr = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2, 0};
         sort(arr, 0, arr.length - 1);
         print(arr);
     }

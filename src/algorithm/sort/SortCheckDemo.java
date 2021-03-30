@@ -36,7 +36,8 @@ public class SortCheckDemo {
             // InsertionSortDemo.sort2(arr1);
             // ShellSortDemo.sort(arr1);
             // MergeSortDemo.sort(arr1, 0, arr1.length - 1);
-            QuickSortDemo.sort(arr1, 0, arr1.length - 1);
+            // QuickSortDemo.sort(arr1, 0, arr1.length - 1);
+            CountSortDemo.sort(arr1);
 
             boolean isSame = false;
             for (int j = 0; j < arr0.length; j++) {
