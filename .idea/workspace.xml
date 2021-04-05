@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfd0753-959d-42db-8651-1acb5d9ff8a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/algorithm/sort/ShellSortDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rebel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/CountWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview-Java-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/interview-Java-code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/jvm/gc/GcRootDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interview-Java-code/jvm/gc/GcRootDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/DeadLockDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/HoldLockThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/MyCache.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/ReadWriteLockDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/ShareResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/SpinLockDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/lock/SyncAndReentrantLockDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/interview-Java-code/thread/SynchronousQueueDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interview-Java-code/thread/SynchronousQueueDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/BubbleSortDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/BubbleSortDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/InsertionSortDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/InsertionSortDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/SelectionSortDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/SelectionSortDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/SortCheckDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/SortCheckDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/ContainerNotSafeDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/sort/HeapSortDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort/HeapSortDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,6 +33,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1pH1sjBC1FeD0cVb1yC2Mma8r48" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -69,6 +63,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.42954546" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
@@ -83,13 +78,13 @@
       <recent name="$PROJECT_DIR$/resource" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SortCheckDemo">
-    <configuration name="BlockingQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.BlockingQueueDemo" />
+  <component name="RunManager" selected="Application.ContainerNotSafeDemo">
+    <configuration name="ArrayMergeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.array.ArrayMergeDemo" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.*" />
+          <option name="PATTERN" value="algorithm.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.CountWord" />
+    <configuration name="ArrayMiddlePivotDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.array.ArrayMiddlePivotDemo" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="algorithm.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,8 +105,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShellSortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.sort.ShellSortDemo" />
+    <configuration name="ContainerNotSafeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.ContainerNotSafeDemo" />
+      <module name="interview-Java-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapSortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.sort.HeapSortDemo" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
@@ -123,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortCheckDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.sort.SortCheckDemo" />
+    <configuration name="SearchInsertDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.array.SearchInsertDemo" />
       <module name="interview-Java-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithm.sort.*" />
+          <option name="PATTERN" value="algorithm.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,39 +144,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronousQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.SynchronousQueueDemo" />
-      <module name="interview-Java-code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SortCheckDemo" />
-        <item itemvalue="Application.ShellSortDemo" />
-        <item itemvalue="Application.CountWord" />
-        <item itemvalue="Application.SynchronousQueueDemo" />
-        <item itemvalue="Application.BlockingQueueDemo" />
+        <item itemvalue="Application.ContainerNotSafeDemo" />
+        <item itemvalue="Application.ArrayMergeDemo" />
+        <item itemvalue="Application.SearchInsertDemo" />
+        <item itemvalue="Application.ArrayMiddlePivotDemo" />
+        <item itemvalue="Application.HeapSortDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +171,9 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -210,6 +206,16 @@
       <workItem from="1616718521964" duration="286000" />
       <workItem from="1616718963249" duration="966000" />
       <workItem from="1616719989392" duration="13190000" />
+      <workItem from="1616824574887" duration="1347000" />
+      <workItem from="1616825948987" duration="2783000" />
+      <workItem from="1616829340813" duration="20988000" />
+      <workItem from="1617039705683" duration="6142000" />
+      <workItem from="1617085589942" duration="12834000" />
+      <workItem from="1617217775013" duration="111000" />
+      <workItem from="1617217916943" duration="6399000" />
+      <workItem from="1617281440011" duration="19861000" />
+      <workItem from="1617364034341" duration="1393000" />
+      <workItem from="1617590540531" duration="1486000" />
     </task>
     <task id="LOCAL-00001" summary="阻塞队列。&#10;synchronized 和 ReentrantLock 的区别。">
       <created>1615192841290</created>
@@ -246,11 +252,93 @@
       <option name="project" value="LOCAL" />
       <updated>1616718809693</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reformat">
+      <created>1616825150150</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616825150150</updated>
+    </task>
+    <task id="LOCAL-00007" summary="reformat">
+      <created>1616825388605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616825388605</updated>
+    </task>
+    <task id="LOCAL-00008" summary="归并排序">
+      <created>1616899174303</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616899174303</updated>
+    </task>
+    <task id="LOCAL-00009" summary="归并排序 recode">
+      <created>1616903619484</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616903619484</updated>
+    </task>
+    <task id="LOCAL-00010" summary="归并排序 解决了数组越界 bug 以及边界值处理">
+      <created>1616917362423</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616917362423</updated>
+    </task>
+    <task id="LOCAL-00011" summary="归并排序 解决了数组越界 bug 以及边界值处理">
+      <created>1616917554522</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616917554522</updated>
+    </task>
+    <task id="LOCAL-00012" summary="快速排序 分治法">
+      <created>1616922380189</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616922380189</updated>
+    </task>
+    <task id="LOCAL-00013" summary="快速排序 分治法">
+      <created>1616945240037</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616945240038</updated>
+    </task>
+    <task id="LOCAL-00014" summary="计数排序 桶思想">
+      <created>1617075089765</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1617075089765</updated>
+    </task>
+    <task id="LOCAL-00015" summary="堆排序&#10;数组相关算法题">
+      <created>1617348266746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1617348266747</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -260,8 +348,26 @@
     <MESSAGE value="设计模式——单例模式" />
     <MESSAGE value="死锁" />
     <MESSAGE value="新增排序算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增排序算法" />
+    <MESSAGE value="reformat" />
+    <MESSAGE value="归并排序" />
+    <MESSAGE value="归并排序 recode" />
+    <MESSAGE value="归并排序 解决了数组越界 bug 以及边界值处理" />
+    <MESSAGE value="快速排序 分治法" />
+    <MESSAGE value="计数排序 桶思想" />
+    <MESSAGE value="堆排序&#10;数组相关算法题" />
+    <option name="LAST_COMMIT_MESSAGE" value="堆排序&#10;数组相关算法题" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

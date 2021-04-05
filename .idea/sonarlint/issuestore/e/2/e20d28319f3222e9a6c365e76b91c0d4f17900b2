@@ -1,0 +1,6 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(§žÞº8þÑš„Š/
+Z
+java:S1854"8Remove this useless assignment to local variable "set0".(Ò§Þ­ýÿÿÿÿ8÷Ê§„Š/
+K
+java:S1481")Remove this unused "set0" local variable.(Ò§Þ­ýÿÿÿÿ8÷Ê§„Š/

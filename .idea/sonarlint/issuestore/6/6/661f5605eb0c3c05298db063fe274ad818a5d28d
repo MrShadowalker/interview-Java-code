@@ -1,0 +1,14 @@
+
+1
+java:S2119"Save and re-use this "Random".(¼ÝÅf
+L
+java:S1144"8Remove this unused private "generateRandomArray" method.( †¯Š
+V	java:S125"<This block of commented-out lines of code should be removed.(ç¸¥8»Ð–¾‡/
+V	java:S125"<This block of commented-out lines of code should be removed.(õ¿Éø8‰Óô½‡/
+=
+java:S1144")Remove this unused private "swap" method.(ý‚Ó•
+X	java:S106"9Replace this use of System.out or System.err by a logger.(“×·ôþÿÿÿÿ8¦ñµ‡/
+I
+java:S1144".Remove this unused private "mergeDemo" method.(Ö¦½8Ä›¤·‡/
+V	java:S125"<This block of commented-out lines of code should be removed.(ÏñÝê8ûé–¾‡/
+[	java:S125"<This block of commented-out lines of code should be removed.(ô´¢íÿÿÿÿÿ8¶¢Ó·‡/

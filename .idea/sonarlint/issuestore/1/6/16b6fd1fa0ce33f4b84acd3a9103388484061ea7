@@ -1,0 +1,14 @@
+
+]	java:S125$"<This block of commented-out lines of code should be removed.(²Ü¡şÿÿÿÿ8ôŸˆˆ/
+U	java:S106A"9Replace this use of System.out or System.err by a logger.(Ù©È±8£ÿõ‡ˆ/
+]	java:S1251"<This block of commented-out lines of code should be removed.(ı´ø¤ıÿÿÿÿ8ÔĞ¢ˆˆ/
+y	java:S127 "XRefactor the code in order to not assign to this loop counter from within the loop body.(¿Ÿ™±ÿÿÿÿÿ8âÁù‡ˆ/
+U
+java:S11445"8Remove this unused private "generateRandomArray" method.( †¯Š8£ÿõ‡ˆ/
+v
+java:S3012'"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(éÒÛÀ8‘êˆˆ/
+:
+java:S21196"Save and re-use this "Random".(¼İÅf8£ÿõ‡ˆ/
+F
+java:S1144E")Remove this unused private "swap" method.(ı‚Ó•8£ÿõ‡ˆ/
+]	java:S125"<This block of commented-out lines of code should be removed.(ƒ³Šşÿÿÿÿ8«¶ˆˆ/

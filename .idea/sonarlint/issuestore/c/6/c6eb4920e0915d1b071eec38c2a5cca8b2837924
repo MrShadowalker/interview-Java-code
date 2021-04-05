@@ -1,19 +1,19 @@
 
 B
 java:S1602&",Remove useless curly braces around statement(¥—ığ
-\
-java:S2142P"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-P
-java:S1141N"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
-N	java:S106@"9Replace this use of System.out or System.err by a logger.(ñ›ªş
-r
-java:S30771"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ôé×±úÿÿÿÿ
 N	java:S106L"9Replace this use of System.out or System.err by a logger.(§¯Ç
-\
-java:S2142<"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-P
-java:S1141:"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
 B
 java:S1602",Remove useless curly braces around statement(¥—ığ
+r
+java:S30771"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ôé×±úÿÿÿÿ
+P
+java:S1141N"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+P
+java:S1141:"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+\
+java:S2142<"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
 N	java:S1068"9Replace this use of System.out or System.err by a logger.(çôğ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(ñ›ªş
+\
+java:S2142P"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
 S	java:S106T"9Replace this use of System.out or System.err by a logger.(ŒúáÃúÿÿÿÿ

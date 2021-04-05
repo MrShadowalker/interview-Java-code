@@ -1,0 +1,6 @@
+
+8
+java:S2119"Save and re-use this "Random".(¼ÝÅf8Žÿó¾‡/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(º¼É°8’Žø¾‡/
+S
+java:S1144"8Remove this unused private "generateRandomArray" method.( †¯Š8Žÿó¾‡/

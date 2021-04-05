@@ -1,6 +1,7 @@
 
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(º¼É°8ÙÖ’‡/
 :
-java:S2119$"Save and re-use this "Random".(¼İÅf8¹°×‘‡/
+java:S2119."Save and re-use this "Random".(¼İÅf8ÙÖ’‡/
 U
-java:S1144#"8Remove this unused private "generateRandomArray" method.( †¯Š8¹°×‘‡/
-U	java:S106/"9Replace this use of System.out or System.err by a logger.(º¼É°8¹°×‘‡/
+java:S1144-"8Remove this unused private "generateRandomArray" method.( †¯Š8ÙÖ’‡/
+]	java:S125!"<This block of commented-out lines of code should be removed.(‡¼³œûÿÿÿÿ8ÙÖ’‡/

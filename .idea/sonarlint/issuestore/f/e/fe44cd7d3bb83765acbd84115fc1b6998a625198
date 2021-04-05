@@ -1,8 +1,8 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(ÆÈ¯ ıÿÿÿÿ8À¼œ‘‡/
-g
-java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Èñ¾„ıÿÿÿÿ8Ûãòö†/
-{
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ã¢¦ùÿÿÿÿ8Ûãòö†/
-U	java:S106-"9Replace this use of System.out or System.err by a logger.(¬Š÷8Ûãòö†/
-Z	java:S106)"9Replace this use of System.out or System.err by a logger.(ÕÇÕûÿÿÿÿ8Ûãòö†/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ÕÇÕûÿÿÿÿ8Ûãòö†/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬Š÷8Ûãòö†/
+y
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ã¢¦ùÿÿÿÿ8Ûãòö†/
+[	java:S125"<This block of commented-out lines of code should be removed.(ÆÈ¯ ıÿÿÿÿ8À¼œ‘‡/
+e
+java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Èñ¾„ıÿÿÿÿ8Ûãòö†/

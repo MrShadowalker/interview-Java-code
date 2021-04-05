@@ -1,0 +1,18 @@
+
+O
+java:S1135l"2Complete the task associated to this TODO comment.(…ïœ†8¯ÈŞ‹‰/
+H
+java:S1172&"&Remove these unused method parameters.(Í‹ºÍÿÿÿÿÿ8¸ÉŒÌˆ/
+L
+java:S1172)"*Remove this unused method parameter "arr".(Ì‹İåûÿÿÿÿ8ÛÊåËˆ/
+£
+java:S1186&"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Í‹ºÍÿÿÿÿÿ8¸ÉŒÌˆ/
+£
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ì‹İåûÿÿÿÿ8ÛÊåËˆ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(“×·ôşÿÿÿÿ8şñÉˆ/
+h	java:S112‚"FDefine and throw a dedicated exception instead of using a generic one.(äÏªúÿÿÿÿ8ş€‘Ìˆ/
+y	java:S127M"XRefactor the code in order to not assign to this loop counter from within the loop body.(­–„úÿÿÿÿ8ÛÊåËˆ/
+Ÿ
+java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÖŞ”¿8ªóëˆ/
+D
+java:S1172ˆ"&Remove these unused method parameters.(ÖŞ”¿8ªóëˆ/

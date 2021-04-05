@@ -1,9 +1,9 @@
 
-N	java:S106"9Replace this use of System.out or System.err by a logger.(’“ñ­
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Â ²
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Â ²
+N	java:S106"9Replace this use of System.out or System.err by a logger.(’“ñ­
 \
-java:S2142'"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+java:S2142)"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
 \
-java:S2142/"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-V	java:S1257"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
-Q	java:S125"<This block of commented-out lines of code should be removed.(£ï—¸
+java:S21421"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+Q	java:S125"<This block of commented-out lines of code should be removed.(£ï—¸
+V	java:S1259"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ

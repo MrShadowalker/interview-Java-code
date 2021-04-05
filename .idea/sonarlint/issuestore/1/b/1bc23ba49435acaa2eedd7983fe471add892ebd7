@@ -1,9 +1,9 @@
 
-E
-java:S1068"(Remove this unused "name" private field.(Λ¥Ό8Α‚‚¤/
+H
+java:S1068"+Remove this unused "country" private field.(Σ¤¨8Òƒ¤/
 d
 java:S2094"BRemove this empty class, write its code or make it an "interface".(θ‹χωÿÿÿÿ8µ€¤/
 I
 java:S1068"'Remove this unused "age" private field.(Ζ†΄¦ώÿÿÿÿ8Α‚‚¤/
-H
-java:S1068"+Remove this unused "country" private field.(Σ¤¨8Òƒ¤/
+E
+java:S1068"(Remove this unused "name" private field.(Λ¥Ό8Α‚‚¤/

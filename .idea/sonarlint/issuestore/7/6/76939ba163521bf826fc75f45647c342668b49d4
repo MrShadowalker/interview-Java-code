@@ -1,8 +1,8 @@
 
-L
-java:S1144"8Remove this unused private "generateRandomArray" method.( †¯Š
-1
-java:S2119"Save and re-use this "Random".(¼ÝÅf
-O	java:S125"<This block of commented-out lines of code should be removed.(³”ãŽ
-T	java:S125"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-L	java:S106"9Replace this use of System.out or System.err by a logger.(º¼É°
+V	java:S125"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(º¼É°
+3
+java:S21193"Save and re-use this "Random".(¼ÝÅf
+Q	java:S125"<This block of commented-out lines of code should be removed.(³”ãŽ
+N
+java:S11442"8Remove this unused private "generateRandomArray" method.( †¯Š

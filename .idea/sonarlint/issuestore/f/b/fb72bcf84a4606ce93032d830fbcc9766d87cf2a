@@ -1,4 +1,4 @@
 
-^
-java:S2094"BRemove this empty class, write its code or make it an "interface".(Æ»œ08Ðþ¢„ƒ/
-W	java:S125"<This block of commented-out lines of code should be removed.(§»Š&8Ðþ¢„ƒ/
+U	java:S125"<This block of commented-out lines of code should be removed.(§»Š&8Ðþ¢„ƒ/
+\
+java:S2094"BRemove this empty class, write its code or make it an "interface".(Æ»œ08Ðþ¢„ƒ/
