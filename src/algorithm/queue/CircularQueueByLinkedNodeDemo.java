@@ -44,7 +44,6 @@ public class CircularQueueByLinkedNodeDemo {
      * boolean param_6 = obj.isFull();
      */
 
-
     private Node head, tail;
     private int count;
     private int size;
@@ -58,8 +57,6 @@ public class CircularQueueByLinkedNodeDemo {
         CircularQueueByLinkedNodeDemo emptyQueue = new CircularQueueByLinkedNodeDemo(5);
         System.out.println("test isEmmpty()");
         System.out.println(emptyQueue.isEmpty());
-
-
     }
 
     public boolean enQueue(int value) {

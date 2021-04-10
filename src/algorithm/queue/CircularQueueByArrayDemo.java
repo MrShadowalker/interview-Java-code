@@ -1,5 +1,7 @@
 package algorithm.queue;
 
+import lombok.Data;
+
 /**
  * 循环队列
  * <p>
@@ -7,6 +9,7 @@ package algorithm.queue;
  *
  * @author Shadowalker
  */
+@Data
 public class CircularQueueByArrayDemo {
 
     private int[] queue;
@@ -14,14 +17,20 @@ public class CircularQueueByArrayDemo {
     private int head, tail;
 
     public static void main(String[] args) {
+        CircularQueueByArrayDemo arrayQueue = new CircularQueueByArrayDemo(5);
+        int[] queue = {1, 3, 5};
+        arrayQueue.setQueue(queue);
+        System.out.println(arrayQueue);
+        arrayQueue.enQueue(4);
+        System.out.println(arrayQueue);
+        arrayQueue.deQueue();
+        System.out.println(arrayQueue);
 
     }
 
     public CircularQueueByArrayDemo(int k) {
         this.queue = new int[k];
         this.size = k;
-        this.head = 0;
-        this.tail = 0;
     }
 
     // 向队尾添加值
@@ -29,7 +38,11 @@ public class CircularQueueByArrayDemo {
         if (isFull()) {
             return false;
         }
-
+        if (isEmpty()) {
+            head = 0;
+            tail = 0;
+        }
+        
         return true;
     }
 
