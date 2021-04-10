@@ -1,6 +1,10 @@
 package algorithm.queue;
 
 /**
+ * 循环队列
+ * <p>
+ * 数组实现
+ *
  * @author Shadowalker
  */
 public class CircularQueueByArrayDemo {
@@ -20,6 +24,7 @@ public class CircularQueueByArrayDemo {
         this.tail = 0;
     }
 
+    // 向队尾添加值
     public boolean enQueue(int value) {
         if (isFull()) {
             return false;
@@ -28,6 +33,7 @@ public class CircularQueueByArrayDemo {
         return true;
     }
 
+    // 从队首删除值
     public boolean deQueue() {
         if (isEmpty()) {
             return false;
