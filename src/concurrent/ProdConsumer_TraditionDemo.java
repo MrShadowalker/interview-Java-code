@@ -1,55 +1,8 @@
-package thread;
+package concurrent;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
-class ShareData {
-    private int number = 0;
-    private Lock lock = new ReentrantLock();
-    private Condition condition = lock.newCondition();
-
-    public void increment() {
-        lock.lock();
-        try {
-            // 1 判断
-            // if (number != 0) { // 这里如果用 if，则会出现负数，多线程下虚假通知
-            while (number != 0) {
-                // 等待，不能生产
-                condition.await();
-            }
-            // 2 干活
-            number++;
-            System.out.println(Thread.currentThread().getName() + "\t" + number);
-            // 3 通知唤醒
-            condition.signalAll();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            lock.unlock();
-        }
-    }
-
-    public void decrement() {
-        lock.lock();
-        try {
-            // 1 判断
-            while (number == 0) {
-                // 等待，不能生产
-                condition.await();
-            }
-            // 2 干活
-            number--;
-            System.out.println(Thread.currentThread().getName() + "\t" + number);
-            // 3 通知唤醒
-            condition.signalAll();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            lock.unlock();
-        }
-    }
-}
 
 /**
  * 传统生产者/消费者模式
@@ -104,5 +57,52 @@ public class ProdConsumer_TraditionDemo {
                 }
             }
         }, "ThreadDecrement2").start();
+    }
+}
+
+class ShareData {
+    private int number = 0;
+    private Lock lock = new ReentrantLock();
+    private Condition condition = lock.newCondition();
+
+    public void increment() {
+        lock.lock();
+        try {
+            // 1 判断
+            // if (number != 0) { // 这里如果用 if，则会出现负数，多线程下虚假通知
+            while (number != 0) {
+                // 等待，不能生产
+                condition.await();
+            }
+            // 2 干活
+            number++;
+            System.out.println(Thread.currentThread().getName() + "\t" + number);
+            // 3 通知唤醒
+            condition.signalAll();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public void decrement() {
+        lock.lock();
+        try {
+            // 1 判断
+            while (number == 0) {
+                // 等待，不能生产
+                condition.await();
+            }
+            // 2 干活
+            number--;
+            System.out.println(Thread.currentThread().getName() + "\t" + number);
+            // 3 通知唤醒
+            condition.signalAll();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
     }
 }
