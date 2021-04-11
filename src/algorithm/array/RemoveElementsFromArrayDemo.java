@@ -39,7 +39,7 @@ package algorithm.array;
  *
  * @author Shadowalker
  */
-public class RemoveElementDemo {
+public class RemoveElementsFromArrayDemo {
     public static void main(String[] args) {
         int[] nums = {0, 1, 2, 2, 3, 0, 2, 4};
         int val = 2;
