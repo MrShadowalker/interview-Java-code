@@ -1,4 +1,4 @@
-package algorithm.string;
+package datastructure.string;
 
 /**
  * 最长公共前缀

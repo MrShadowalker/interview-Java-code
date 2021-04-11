@@ -1,4 +1,4 @@
-package algorithm.array;
+package datastructure.array;
 
 /**
  * 给你一个整数数组 nums，请编写一个能够返回数组 “中心下标” 的方法。

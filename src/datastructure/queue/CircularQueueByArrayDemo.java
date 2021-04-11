@@ -1,8 +1,10 @@
-package algorithm.queue;
+package datastructure.queue;
 
 import lombok.Data;
 
 /**
+ * Leetcode 622
+ * <p>
  * 循环队列
  * <p>
  * 数组实现

@@ -1,4 +1,4 @@
-package algorithm.string;
+package datastructure.string;
 
 /**
  * 反转字符串

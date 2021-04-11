@@ -1,4 +1,4 @@
-package algorithm.array;
+package datastructure.array;
 
 /**
  * Leetcode 283
