@@ -11,9 +11,24 @@ import org.openjdk.jol.info.ClassLayout;
  */
 public class JOLDemo {
     public static void main(String[] args) {
-        // byte[] bytes = new byte[1000];
-        // System.out.println(ClassLayout.parseInstance(bytes).toPrintable());
+
+        // 如果先睡 5 秒，会发现 new Object() 创建的对象又变了，其实是涉及到一个锁升级的原因。
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         Object o = new Object();
-        System.out.println(ClassLayout.parseInstance(o).toPrintable());
+        System.out.println("初始化新对象：" + ClassLayout.parseInstance(o).toPrintable());
+
+        // 上锁
+        synchronized (o) {
+            // System.out.println("Hello, JOL!");
+            // 不睡五秒，轻量级锁 00，也叫自旋锁
+            // 睡五秒，偏向锁 101，偏向锁启动默认四秒
+            System.out.println("对象加锁：" + ClassLayout.parseInstance(o).toPrintable());
+        }
+        System.out.println("对象解锁：" + ClassLayout.parseInstance(o).toPrintable());
     }
 }
