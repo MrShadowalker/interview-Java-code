@@ -37,7 +37,7 @@ public class NextGreaterElementDemo {
 
     }
 
-    // TODO 单调栈
+    // TODO 单调栈 + 哈希表
     private static int[] nextGreaterElement(int[] nums1, int[] nums2) {
 
 
