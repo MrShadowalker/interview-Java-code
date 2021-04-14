@@ -13,11 +13,11 @@ public class JOLDemo {
     public static void main(String[] args) {
 
         // 如果先睡 5 秒，会发现 new Object() 创建的对象又变了，其实是涉及到一个锁升级的原因。
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        // try {
+        //     Thread.sleep(5000);
+        // } catch (InterruptedException e) {
+        //     e.printStackTrace();
+        // }
 
         Object o = new Object();
         System.out.println("初始化新对象：" + ClassLayout.parseInstance(o).toPrintable());
