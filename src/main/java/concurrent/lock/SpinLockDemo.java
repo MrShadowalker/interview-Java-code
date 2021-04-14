@@ -1,4 +1,4 @@
-package lock.jvm;
+package concurrent.lock;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;

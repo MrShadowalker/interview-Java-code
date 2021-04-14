@@ -1,4 +1,4 @@
-package lock.jvm;
+package concurrent.lock;
 
 import java.util.HashMap;
 import java.util.Map;
