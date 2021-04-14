@@ -29,9 +29,9 @@ public class MinPathSumDemo {
         System.out.println(minSum);
     }
 
+    // TODO
     private static int minPathSum(int[][] grip) {
         int minSum = 0;
-
 
 
         return minSum;
