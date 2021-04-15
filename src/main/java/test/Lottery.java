@@ -11,7 +11,8 @@ import java.util.Set;
  * @author Shadowalker
  */
 public class Lottery {
-    static String[] list = {};
+
+    static String[] list = {"1234", "321421", "12123124", "112344", "12354123"};
 
     // 获奖人数
     static int max = 3;
