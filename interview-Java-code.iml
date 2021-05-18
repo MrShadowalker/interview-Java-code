@@ -10,7 +10,7 @@
             <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerPreviousEnabledSelection" value="instance" />
             <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerSelection" value="off" />
             <entry key="jrebelEnabled" value="true" />
-            <entry key="lastExternalPluginCheckTime" value="1616824618172" />
+            <entry key="lastExternalPluginCheckTime" value="1619833106667" />
           </map>
         </option>
       </configuration>
@@ -37,5 +37,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Maven: org.openjdk.jol:jol-core:0.12" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.20" level="project" />
   </component>
 </module>
