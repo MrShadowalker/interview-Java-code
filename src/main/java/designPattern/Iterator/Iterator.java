@@ -26,7 +26,7 @@ public interface Iterator {
     public abstract boolean hasNext();
 
     /**
-     * 获取下一个元素
+     * 返回当前的元素，并指向下一个元素
      *
      * @return
      */
