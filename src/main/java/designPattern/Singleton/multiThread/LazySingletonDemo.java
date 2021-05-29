@@ -6,7 +6,7 @@ package designPattern.Singleton.multiThread;
  * 问题：
  * 1. 线程安全问题
  * 2. double check lock DLC 加锁优化
- * 3. 编译器（JIT），CPU 可能进行指令重排，导致使用到尚未初始化的实例，可以通过 volatile 关键字进行修饰。
+ * 3. 编译器（JIT），CPU 可能进行指令重排，导致使用到尚未初始化的实例，可以通过 volatileTest 关键字进行修饰。
  *
  * @author Shadowalker
  */

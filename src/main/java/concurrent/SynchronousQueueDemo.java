@@ -1,4 +1,4 @@
-package thread;
+package concurrent;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;

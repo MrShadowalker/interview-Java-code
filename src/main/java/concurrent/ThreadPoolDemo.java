@@ -1,4 +1,4 @@
-package thread;
+package concurrent;
 
 /**
  * 线程池
