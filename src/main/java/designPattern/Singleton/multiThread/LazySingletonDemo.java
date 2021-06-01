@@ -41,6 +41,7 @@ class LazySingleton {
 /**
  * @author Shadowalker
  */
+@SuppressWarnings("AlibabaAvoidManuallyCreateThread")
 public class LazySingletonDemo {
 
     public static void main(String[] args) {

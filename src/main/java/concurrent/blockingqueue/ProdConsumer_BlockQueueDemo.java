@@ -1,4 +1,4 @@
-package concurrent;
+package concurrent.blockingqueue;
 
 /**
  * 阻塞队列生产者/消费者模式
