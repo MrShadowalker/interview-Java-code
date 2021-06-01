@@ -135,6 +135,7 @@ public class RotateArrayDemo {
         reverse(nums, k, nums.length - 1);
     }
 
+    // 翻转数组
     public static void reverse(int[] nums, int start, int end) {
         while (start < end) {
             int temp = nums[start];
