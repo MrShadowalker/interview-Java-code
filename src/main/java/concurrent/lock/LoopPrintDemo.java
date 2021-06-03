@@ -17,17 +17,17 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  * @author Shadowalker
  */
+@SuppressWarnings("AlibabaAvoidManuallyCreateThread")
 public class LoopPrintDemo {
     public static void main(String[] args) {
         AlternationDemo ad = new AlternationDemo();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 10; i++) {
-                    ad.loopA();
-                }
+
+        new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                ad.loopA();
             }
         }, "A").start();
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -36,6 +36,7 @@ public class LoopPrintDemo {
                 }
             }
         }, "B").start();
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -48,7 +49,10 @@ public class LoopPrintDemo {
 }
 
 class AlternationDemo {
-    private int number = 1;//当前正在执行的线程的标记
+    /**
+     * 当前正在执行的线程的标记
+     */
+    private int number = 1;
     private Lock lock = new ReentrantLock();
     Condition condition1 = lock.newCondition();
     Condition condition2 = lock.newCondition();
@@ -57,13 +61,16 @@ class AlternationDemo {
     public void loopA() {
         lock.lock();
         try {
-            if (number != 1) { //判断
+            // 判断
+            if (number != 1) {
                 condition1.await();
             }
-            System.out.println(Thread.currentThread().getName());//打印
+            // 打印
+            System.out.println(Thread.currentThread().getName());
             number = 2;
             condition2.signal();
         } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             lock.unlock();
         }
@@ -72,13 +79,16 @@ class AlternationDemo {
     public void loopB() {
         lock.lock();
         try {
-            if (number != 2) { //判断
+            // 判断
+            if (number != 2) {
                 condition2.await();
             }
-            System.out.println(Thread.currentThread().getName());//打印
+            // 打印
+            System.out.println(Thread.currentThread().getName());
             number = 3;
             condition3.signal();
         } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             lock.unlock();
         }
@@ -87,13 +97,16 @@ class AlternationDemo {
     public void loopC() {
         lock.lock();
         try {
-            if (number != 3) { //判断
+            // 判断
+            if (number != 3) {
                 condition3.await();
             }
-            System.out.println(Thread.currentThread().getName());//打印
+            // 打印
+            System.out.println(Thread.currentThread().getName());
             number = 1;
             condition1.signal();
         } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             lock.unlock();
         }
