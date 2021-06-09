@@ -67,7 +67,8 @@ public class SyncAndReentrantLockDemo {
 
 class ShareResource {
 
-    private int number = 1; // A:1,B:2,C:3
+    // A:1,B:2,C:3
+    private int number = 1;
     private Lock lock = new ReentrantLock();
     private Condition condition1 = lock.newCondition();
     private Condition condition2 = lock.newCondition();

@@ -7,7 +7,9 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Shadowalker
  */
+@SuppressWarnings("AlibabaAvoidManuallyCreateThread")
 public class DeadLockDemo {
+
     public static void main(String[] args) {
         String lockA = "lockA";
         String lockB = "lockB";
@@ -44,12 +46,15 @@ class HoldLockThread implements Runnable {
     @Override
     public void run() {
         synchronized (lockA) {
+
             System.out.println(Thread.currentThread().getName() + "\t 自己持有：" + lockA + "\t 尝试获得：" + lockB);
+
             try {
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 e.printStackTrace();
             }
+
             synchronized (lockB) {
                 System.out.println(Thread.currentThread().getName() + "\t 自己持有：" + lockA + "\t 尝试获得：" + lockB);
             }
