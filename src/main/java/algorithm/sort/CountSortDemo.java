@@ -9,6 +9,7 @@ import java.util.Random;
  *
  * @author Shadowalker
  */
+@SuppressWarnings("ALL")
 public class CountSortDemo {
 
     public static void main(String[] args) {

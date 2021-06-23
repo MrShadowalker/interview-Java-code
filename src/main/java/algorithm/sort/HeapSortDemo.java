@@ -106,6 +106,7 @@ public class HeapSortDemo {
 }
 
 /* TODO 大根堆 */
+@SuppressWarnings("ALL")
 class MaxHeapDemo {
     private int[] heap;
     private final int limit;
