@@ -68,8 +68,13 @@ public class CountSortDemo {
     }
 
     private static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
+        // int tmp = arr[i];
+        // arr[i] = arr[j];
+        // arr[j] = tmp;
+
+        // 骚一点的方式——异或
+        arr[i] = arr[i] ^ arr[j];
+        arr[j] = arr[i] ^ arr[j];
+        arr[i] = arr[i] ^ arr[j];
     }
 }

@@ -59,8 +59,8 @@ public class SortCheckDemo {
     }
 
     private static void print(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int j : arr) {
+            System.out.print(j + " ");
         }
     }
 }

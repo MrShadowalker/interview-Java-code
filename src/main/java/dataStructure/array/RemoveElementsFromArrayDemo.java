@@ -45,6 +45,7 @@ public class RemoveElementsFromArrayDemo {
         int val = 2;
         int len = removeElement(nums, val);
         System.out.println(len);
+        System.out.println("++++++++++++++++++++++++");
         for (int num : nums) {
             System.out.println(num);
         }

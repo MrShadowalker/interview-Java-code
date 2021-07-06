@@ -1,7 +1,5 @@
 package algorithm.sort;
 
-import static java.lang.System.out;
-
 /**
  * 堆排序
  *
@@ -10,39 +8,61 @@ import static java.lang.System.out;
 public class HeapSortDemo {
 
     public static void main(String[] args) {
-        int[] arr1 = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
+        // int[] arr1 = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
         int[] arr2 = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
-        int[] arr3 = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
-        sort1(arr1);
+        // sort1(arr1);
         sort2(arr2);
-        sort3(arr3);
-        print(arr1);
+        // print(arr1);
         print(arr2);
-        print(arr3);
     }
 
     /**
      * 经典堆排序
+     * 堆排序额外空间复杂度 O(1)
      *
      * @param arr
      */
     private static void sort1(int[] arr) {
         if (arr == null || arr.length < 2) {
+            System.out.println("arr doesn't need to sort");
             return;
         }
-        for (int i = 0; i < arr.length; i++) {
-            heapInsert(arr, i);
+
+        // 假设每次都是用户新给你的数，按照大根堆插入
+        for (int i = 0; i < arr.length; i++) { // O(N)
+            heapInsert(arr, i); // O(logN)
+        }
+
+        // 优化：自下而上，每次大根堆化即可
+        // for (int i = arr.length - 1; i >= 0; i--) {
+        //     System.out.println("heapify begin...");
+        //     heapify(arr, i, arr.length);
+        //     print(arr);
+        // }
+
+        int heapSize = arr.length;
+        swap(arr, 0, --heapSize);
+        // O(NlogN)
+        while (heapSize > 0) { // O(N)
+            heapify(arr, 0, heapSize); // O(logN)
+            swap(arr, 0, --heapSize);
         }
     }
 
-    private static void heapInsert(int[] arr, int i) {
+    /**
+     * arr[index]刚来的数，往上
+     *
+     * @param arr
+     * @param index
+     */
+    private static void heapInsert(int[] arr, int index) {
+        while (arr[index] > arr[(index - 1) / 2]) {
+            swap(arr, index, (index - 1) / 2);
+            index = (index - 1) / 2;
+        }
     }
 
-    private static void sort2(int[] arr) {
-
-    }
-
-    public static void sort3(int[] arr) {
+    public static void sort2(int[] arr) {
         // 1.构建大顶堆
         for (int i = arr.length / 2 - 1; i >= 0; i--) {
             // 从第一个非叶子结点从下至上，从右至左调整结构
@@ -54,6 +74,36 @@ public class HeapSortDemo {
             swap(arr, 0, j);
             // 重新对堆进行调整
             adjustHeap(arr, 0, j);
+        }
+    }
+
+    /**
+     * 从 index 位置，往下不断下沉
+     * 停止：孩子不再比自己大，或者已经没有孩子了
+     *
+     * @param arr
+     * @param index
+     * @param heapSize
+     */
+    private static void heapify(int[] arr, int index, int heapSize) {
+        int left = index * 2 + 1;
+        int right = left + 1;
+
+        while (left < heapSize) {
+            // 左右两个孩子谁大就把自己下标给 largest
+            // 右 -> 1. 有右孩子 2. 右孩子值比左孩子大
+            // 否则，左
+            int largest = right < heapSize && arr[right] > arr[left] ? right : left;
+
+            // 判断自己孩子和自己谁大谁小，如果左右孩子里面较大的值比自己大，则交换位置
+            largest = arr[largest] > arr[index] ? largest : index;
+            if (largest == index) {
+                break;
+            }
+            swap(arr, largest, index);
+            // 交换后继续下沉，继续找下面的孩子
+            index = largest;
+            left = index * 2 + 1;
         }
     }
 
@@ -93,48 +143,19 @@ public class HeapSortDemo {
     }
 
     private static void print(int[] arr) {
-        for (int j : arr) {
-            out.print(j + " ");
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
     }
 
     private static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
-    }
-}
+        // int tmp = arr[i];
+        // arr[i] = arr[j];
+        // arr[j] = tmp;
 
-/* TODO 大根堆 */
-@SuppressWarnings("ALL")
-class MaxHeapDemo {
-    private int[] heap;
-    private final int limit;
-    private int heapSize;
-
-    public MaxHeapDemo(int limit) {
-        heap = new int[limit];
-        this.limit = limit;
-        heapSize = 0;
-    }
-
-    public boolean isEmpty() {
-        return heapSize == 0;
-    }
-
-    public boolean isFull() {
-        return heapSize == limit;
-    }
-
-    public void push(int value) {
-        if (isFull()) {
-            throw new RuntimeException("堆已满，无法插入。");
-        }
-        heap[heapSize] = value;
-        heapInsert(heap, heapSize++);
-    }
-
-    private void heapInsert(int[] heap, int i) {
-
+        // 骚一点的方式——异或
+        arr[i] = arr[i] ^ arr[j];
+        arr[j] = arr[i] ^ arr[j];
+        arr[i] = arr[i] ^ arr[j];
     }
 }
