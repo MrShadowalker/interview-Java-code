@@ -29,16 +29,16 @@ public class HeapSortDemo {
         }
 
         // 假设每次都是用户新给你的数，按照大根堆插入
-        for (int i = 0; i < arr.length; i++) { // O(N)
-            heapInsert(arr, i); // O(logN)
-        }
+        // for (int i = 0; i < arr.length; i++) { // O(N)
+        //     heapInsert(arr, i); // O(logN)
+        // }
 
         // 优化：自下而上，每次大根堆化即可
-        // for (int i = arr.length - 1; i >= 0; i--) {
-        //     System.out.println("heapify begin...");
-        //     heapify(arr, i, arr.length);
-        //     print(arr);
-        // }
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.println("heapify begin...");
+            heapify(arr, i, arr.length);
+            print(arr);
+        }
 
         int heapSize = arr.length;
         swap(arr, 0, --heapSize);
