@@ -21,6 +21,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  *
  * @author Shadowalker
  */
+@SuppressWarnings("AlibabaAvoidManuallyCreateThread")
 public class ReadWriteLockDemo {
 
     public static void main(String[] args) {

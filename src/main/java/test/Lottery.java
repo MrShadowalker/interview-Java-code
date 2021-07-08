@@ -19,10 +19,7 @@ public class Lottery {
 
     public static void main(String[] args) {
         Set<String> set = new HashSet<>();
-        for (; ; ) {
-            if (set.size() == max) {
-                break;
-            }
+        while (set.size() != max) {
             int random = new SecureRandom().nextInt(list.length);
             set.add(list[random]);
         }

@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Shadowalker
  */
+@SuppressWarnings("AlibabaAvoidManuallyCreateThread")
 public class SynchronousQueueDemo {
     public static void main(String[] args) {
 

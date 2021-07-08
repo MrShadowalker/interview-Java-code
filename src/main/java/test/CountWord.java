@@ -7,12 +7,17 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * 文本词条计数器
+ *
+ * @author Shadowalker
+ */
 public class CountWord {
 
     public static void main(String[] args) throws FileNotFoundException {
         // 判断文件是否为空
         // File file = new File("If not now when   if not me who ");
-        File file = new File("ThreadPoolDemo.txt");
+        File file = new File("CountWordTest.txt");
 
         // 扫描器
         Scanner scanner = new Scanner(file);
@@ -27,22 +32,23 @@ public class CountWord {
 
             Set<String> wordSet = hashTable.keySet();
 
-            for (int i = 0; i < wordArray.length; i++) {
+            for (String s : wordArray) {
                 // 如果存在
-                if (wordSet.contains(wordArray[i])) {
-                    Integer count = hashTable.get(wordArray[i]);
+                if (wordSet.contains(s)) {
+                    Integer count = hashTable.get(s);
                     count++;
-                    hashTable.put(wordArray[i], count);
+                    hashTable.put(s, count);
                 } else {
-                    hashTable.put(wordArray[i], 1);
+                    hashTable.put(s, 1);
                 }
             }
         }
-        System.out.println("-------------------");
 
+        System.out.println("----------word count list----------");
         // 遍历hashTable 打印： 单词 出现次数
         for (Map.Entry<String, Integer> entry : hashTable.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
+        System.out.println("-----------------------------------");
     }
 }
