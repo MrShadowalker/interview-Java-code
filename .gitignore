@@ -1,5 +1,6 @@
 /out/
 /target/
+rebel.xml
 *.iml
 .idea
 .settings
